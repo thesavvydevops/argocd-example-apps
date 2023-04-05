@@ -5,8 +5,8 @@
 replicaCount: 5
 
 image:
-  repository: nginx
-  tag: stable-alpine3.17-slim
+  repository: 519276712684.dkr.ecr.eu-west-3.amazonaws.com/some-nginx
+  tag: latest
   pullPolicy: IfNotPresent
 
 service:
