@@ -6,7 +6,7 @@ replicaCount: 5
 
 image:
   repository: 519276712684.dkr.ecr.eu-west-3.amazonaws.com/some-nginx
-  tag: 0.0
+  tag: "0.0"
   pullPolicy: IfNotPresent
 
 service:
