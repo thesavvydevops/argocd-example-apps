@@ -8,6 +8,11 @@ metadata:
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 spec:
+  strategy:
+    blueGreen: 
+      activeService: rollout-bluegreen-active
+      previewService: rollout-bluegreen-preview
+      autoPromotionEnabled: false
   replicas: {{ .Values.replicaCount }}
   revisionHistoryLimit: 3
   selector:
